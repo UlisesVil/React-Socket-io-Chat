@@ -12,7 +12,7 @@ export function SocketProvider({ id, children }) {
     
     useEffect(()=>{
         const newSocket = io(
-            'http://localhost:5000', 
+            'https://ulisesv-react-chat-webapp.herokuapp.com', 
             {
                 withCredentials: false,
                 query: { id }
@@ -31,3 +31,4 @@ export function SocketProvider({ id, children }) {
         </SocketContext.Provider>
     )
 }
+//'http://localhost:5000',
