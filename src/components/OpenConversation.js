@@ -22,28 +22,12 @@ function handleSubmit(e){
 
 }
 
-function openMenu(){
-    let sideBarContainer=document.getElementById("sideBarContainer");
-    console.log(sideBarContainer);
 
-    if(sideBarContainer.style.display==="none"){
-        let sideBarContainer=document.getElementById("sideBarContainer");
-        sideBarContainer.style.display = "flex";
-        console.log(sideBarContainer);
-        
-      
-    }else{
-        let sideBarContainer=document.getElementById("sideBarContainer");
-        sideBarContainer.style.display = "none";
-        console.log(sideBarContainer);
-    }
-   
-}
 
     return (
        
         <div className="d-flex flex-column flex-grow-1 conversationMain">
-             <div id="hamburgerHide"><i className="fas fa-hamburger hamburgerHide" onClick={() =>openMenu()} style={{display:'none'}}></i></div>
+            
             <div className="flex-grow-1 overflow-auto">
                 <div className="d-flex flex-column align-items-start justify-content-end px-3">
                

@@ -16,6 +16,10 @@ export default function Login({ onIdSubmit }) {
         onIdSubmit(uuidV4());
     }
 
+    function eraseLocalStorage(){
+        localStorage.clear();
+    }
+
     return (
         <Container className="align-items-center d-flex" style={{ height: '100vh'}}>
             <Form onSubmit={handleSubmit} className="w-100 loginForm">
@@ -28,6 +32,9 @@ export default function Login({ onIdSubmit }) {
                 </Form.Group>
                 <Button type="submit" className="mr-2 btnCreate">Login</Button>
                 <Button onClick={createNewId} variant="secondary" >Create a new ID</Button>
+                <Button onClick={() => eraseLocalStorage()} className="rounded-1 modalButton">
+                    Borrame
+                </Button>
             </Form>
             
         </Container>

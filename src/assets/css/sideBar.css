@@ -87,16 +87,15 @@
     border-color: rgb(0, 247, 255) !important;
 }
 
-
+/*
 @media screen and (min-width: 770px) {
     .sideBarContainer{
         display: flex !important;
         
     }
-}
+}*/
 @media screen and (max-width: 770px) {
     .sideBarContainer{
-      
         margin-top: 60px !important;
     }
     

@@ -20,7 +20,7 @@ export default function Sidebar({id}) {
     }
 
     return (
-        <div id="sideBarContainer" className="flex-column sideBarContainer" style={{display:'none'}}>
+        <div id="sideBarContainer" className="flex-column sideBarContainer" style={{display:'flex'}}>
             <Tab.Container activeKey={activeKey} onSelect={setActiveKey}>
                 <Nav variant="tabs" className="justify-content-left">
                     <Nav.Item>
