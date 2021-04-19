@@ -42,7 +42,7 @@ export default function NewConversationModal({ closeModal }) {
              />
                      </Form.Group>
                  ))}
-                  <Button type="submit">Create</Button>
+                  <Button type="submit" className="btnCreate">Create</Button>
               </Form>
           </Modal.Body>
         </>

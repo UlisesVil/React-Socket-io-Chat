@@ -1,0 +1,126 @@
+.conversationMain{
+    background:transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+.forMe{
+    background: black !important;
+    color: rgb(0, 247, 255);
+    border: 1px solid rgb(0, 247, 255);
+    /*text-shadow: 3px 3px 3px rgb(0, 247, 255);*/
+}
+.notForMe{
+    background:  rgb(0, 247, 255) !important;
+    color: black;
+    /*text-shadow: 2px 2px 3px black;*/
+}
+
+.userReference{
+    color:white;
+}
+
+.sideBarContainer{
+    display: flex;
+    min-width: 150px;
+    width: 30%;
+    max-width: 300px;
+    background: rgba(0, 0, 0, 0.548) !important;
+}
+
+.nav-item{
+    overflow: hidden;
+}
+
+.activeTab, .disableTab{
+    background: rgba(0, 0, 0, 0.548) !important;
+}
+
+.nav-link{
+    color: gray;
+}
+
+.nav-link:hover{
+    color: rgb(80, 11, 240);
+}
+.active{
+    color: rgb(0, 247, 255) !important;
+    border: 1px solid rgb(0, 247, 255) !important;
+}
+.nav-tabs{
+    border-bottom: none !important;
+    background: none;
+}
+
+.contact .contact{
+    color: rgb(0, 247, 255) !important;
+    text-shadow: 3px 3px 3px rgb(0, 247, 255);
+}
+
+.contact .id{
+    color: rgb(223, 223, 223) !important;
+    font-size: 12px;
+    
+}
+.contactLine{
+    line-height: 15px;
+    margin-bottom: 5px;
+}
+
+.modalButton{
+    background: rgb(2, 2, 2) !important;
+    color: rgb(0, 247, 255) !important;
+    border-color: rgb(0, 247, 255) !important;
+    margin-bottom: 9px;
+}
+
+.modalButton:hover{
+    text-shadow: 5px 5px 3px rgb(0, 247, 255) ;
+}
+
+.textArea{
+    background: rgba(0, 0, 0, 0.7) !important;
+    color: white !important;
+    border-color: rgb(0, 247, 255) !important;
+}
+
+
+@media screen and (min-width: 770px) {
+    .sideBarContainer{
+        display: flex !important;
+        
+    }
+}
+@media screen and (max-width: 770px) {
+    .sideBarContainer{
+      
+        margin-top: 60px !important;
+    }
+    
+    .nav-item{
+        width: 100% !important;
+    }
+
+
+
+    .nav-link{
+        /*border: 1px solid red !important;*/
+        border-right: 1px solid rgb(0, 247, 255) !important;
+        border-left: 1px solid rgb(0, 247, 255) !important;
+        border-top: 1px solid rgb(0, 247, 255) !important;
+        border-top-left-radius: 0px !important;
+        border-top-right-radius: 0px !important;
+    }
+    
+    .nav-link:hover{
+        color: rgb(80, 11, 240);
+    }
+    .active{
+        color: rgb(0, 247, 255) !important;
+        border: 1px solid rgb(0, 247, 255) !important;
+        border-bottom: 1px solid rgb(0, 247, 255) !important;
+    }
+}

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Tab, Nav, Button, Modal} from 'react-bootstrap';
 import Conversations from './Conversations';
 import Contacts from './Contacts';
+import '../assets/css/sideBar.css';
 
 import NewContactModal from './NewContactModal';
 import NewConversationModal from './NewConversationModal';
@@ -19,29 +20,29 @@ export default function Sidebar({id}) {
     }
 
     return (
-        <div style={{width: '250px'}} className="d-flex flex-column">
+        <div id="sideBarContainer" className="flex-column sideBarContainer" style={{display:'none'}}>
             <Tab.Container activeKey={activeKey} onSelect={setActiveKey}>
-                <Nav variant="tabs" className="justify-content-center">
+                <Nav variant="tabs" className="justify-content-left">
                     <Nav.Item>
-                        <Nav.Link eventKey={ CONVERSATIONS_KEY }>Conversations</Nav.Link>
+                        <Nav.Link className="activeTab" eventKey={ CONVERSATIONS_KEY }>Conversations</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                        <Nav.Link eventKey={ CONTACTS_KEY }>Contacts</Nav.Link>
+                        <Nav.Link className="disableTab" eventKey={ CONTACTS_KEY }>Contacts</Nav.Link>
                     </Nav.Item>
                 </Nav>
 
-                <Tab.Content className="border-right overflow-auto flex-grow-1">
+                <Tab.Content className="overflow-auto flex-grow-1">
                     <Tab.Pane eventKey={CONVERSATIONS_KEY}>
                         <Conversations />
                     </Tab.Pane>
-                    <Tab.Pane eventKey={CONTACTS_KEY}>
+                    <Tab.Pane eventKey={CONTACTS_KEY} className="contact">
                         <Contacts />
                     </Tab.Pane>
                 </Tab.Content>
-                <div className="p-2 border-top border-right small">
-                    Your Id: <span className="text-muted">{id}</span>
+                <div className="p-2 small">
+                    Your Id: <span className="text-white"> {id}</span>
                 </div>
-                <Button onClick={() => setModalOpen(true)} className="rounded-0">
+                <Button onClick={() => setModalOpen(true)} className="rounded-1 modalButton">
                     New { conversationsOpen ? 'Conversation' : 'Contact'}
                 </Button>
             </Tab.Container>       
@@ -49,7 +50,7 @@ export default function Sidebar({id}) {
 
             <Modal show={ModalOpen} onHide={closeModal}>
                 {conversationsOpen ? 
-                    <NewConversationModal closeModal={closeModal} /> :
+                    <NewConversationModal closeModal={closeModal}/> :
                     <NewContactModal closeModal={closeModal} />
                 
                 }

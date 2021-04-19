@@ -1,0 +1,47 @@
+.modal-content{
+    background: rgba(0, 0, 0, 0.836) !important;
+    border-radius: 10px !important;
+}
+
+.modal-header, .modal-body{
+    background: rgba(2, 2, 2, 0.274);
+    border: 1px solid rgb(0, 247, 255);
+    color: rgb(0, 247, 255);
+    
+}
+
+.modal-header{
+    border-bottom: 0px !important;
+    border-top-left-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+}
+
+.modal-body{
+    border-bottom-left-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+}
+
+.form-control{
+    background: rgba(0, 0, 0, 0.7) !important;
+    border: 1px solid rgb(0, 247, 255) !important;
+    color: white !important;
+}
+
+.btnCreate{
+    background: rgb(2, 2, 2) !important;
+    border: 1px solid rgb(0, 247, 255) !important;
+    color: rgb(0, 247, 255) !important;
+}
+
+.btnCreate:hover{
+    text-shadow: 2px 2px 3px rgb(0, 0, 0) ;
+    background: rgb(0, 247, 255) !important;
+    color: rgb(0, 0, 0) !important;
+}
+.close{
+    color: rgb(0, 247, 255) !important;
+}
+
+.form-check-input{
+    background: red !important;
+}

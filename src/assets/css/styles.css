@@ -1,0 +1,21 @@
+body{
+    color: white;
+    background: url(../images/back1.jpg);
+}
+
+.loginText{
+    margin: 0px;
+    /*background: rgba(0, 0, 0, 0.775);*/
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.loginForm{
+    max-width: 500px;
+    background: rgba(0, 0, 0, 0.762);
+    padding: 20px;
+    border: 1px solid rgb(0, 247, 255);
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin: auto;
+}

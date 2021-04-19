@@ -6,10 +6,10 @@ export default function Contacts() {
     const { contacts } = useContacts();
 
     return (
-        <ListGroup variant='flush'>
+        <ListGroup variant='flush' className="contact">
             {contacts.map(contact =>(
-                <ListGroup.Item key={contact.id}>
-                    {contact.name}
+                <ListGroup.Item key={contact.id} className="contact">
+                    <p className="contactLine">{contact.name}</p> <p className="contactLine id">{contact.id}</p>
                 </ListGroup.Item>
             ))}
         </ListGroup>
