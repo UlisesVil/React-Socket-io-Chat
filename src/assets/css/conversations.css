@@ -1,3 +1,23 @@
+.conversationMain{
+    background:transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    /*border: 1px solid red;*/
+    padding: 0 10px;
+}
+.subconversation{
+    width: 100% !important;
+    max-width: 700px !important;
+    margin: 20px auto;
+    padding: 10px 10px;
+    background: rgba(0, 0, 0, 0.418);
+    border: 1px solid rgb(0, 247, 255);
+    border-radius: 10px;
+
+}
+
 .list-group .list-group-item{
     background-color: #343a4000 !important;
     color: gray !important;
@@ -41,9 +61,15 @@
 }
 
 
+.form-group{
+    max-width: 800px !important;
+    margin: 0 auto 9px!important;
+}
+
 
 
 @media screen and (max-width: 770px) {
+
     .hamburgerHide{
         position: fixed;
         display: block !important;

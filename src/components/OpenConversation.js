@@ -28,7 +28,7 @@ function handleSubmit(e){
        
         <div className="d-flex flex-column flex-grow-1 conversationMain">
             
-            <div className="flex-grow-1 overflow-auto">
+            <div className="flex-grow-1 overflow-auto subconversation">
                 <div className="d-flex flex-column align-items-start justify-content-end px-3">
                
                     {selectedConversation.messages.map((message, index)=> {
@@ -57,7 +57,7 @@ function handleSubmit(e){
                 </div>
             </div>
             <Form onSubmit={handleSubmit}>
-                <Form.Group className="m-2">
+                <Form.Group>
                     <InputGroup>
                         <Form.Control 
                             as="textarea" 
