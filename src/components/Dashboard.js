@@ -24,17 +24,9 @@ export default function Dashboard({ id }) {
        
     }
 
-    function eraseLocalStorage(){
-        localStorage.clear();
-    }
-
-
     return (
         <div className="d-flex" style={{ height: '100vh'}}>
             <div id="hamburgerHide"><i className="fas fa-hamburger hamburgerHide" onClick={() =>openMenu()} style={{display:'none'}}></i></div>
-            <div onClick={() => eraseLocalStorage()} className="rounded-1 modalButton" style={{ position: 'fixed'}}>
-                Borrame
-            </div>
             <Sidebar id = { id } />
             { selectedConversation &&  <OpenConversation /> }
         
