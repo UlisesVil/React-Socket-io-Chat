@@ -29,11 +29,8 @@ export function SocketProvider({ id, children }) {
             }
         );
         setSocket(newSocket);
-
-        console.log(newSocket);
         return () => newSocket.close();
     },[id]);
-
 
     return (
         <SocketContext.Provider value={ socket }>
