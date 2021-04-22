@@ -5,10 +5,8 @@ import { v4 as uuidV4 } from 'uuid';
 export default function Login({ onIdSubmit }) {
     const idRef = useRef();
     
-
     function handleSubmit(e){
         e.preventDefault();
-
         onIdSubmit(idRef.current.value);
     }
 
@@ -21,15 +19,22 @@ export default function Login({ onIdSubmit }) {
             <Form onSubmit={handleSubmit} className="w-100 loginForm">
                 <Form.Group>
                     <Form.Label>
-                        <p className="loginText text-white">- Enter your 10 Digit Phone Number</p>
-                        <p className="loginText text-white">- Or Generate a Random ID</p>
+                        <p className="loginText text-white">
+                            - Enter your 10 Digit Phone Number
+                        </p>
+                        <p className="loginText text-white">
+                            - Or Generate a Random ID
+                        </p>
                     </Form.Label>
                     <Form.Control type="text" ref={idRef} required/>
                 </Form.Group>
-                <Button type="submit" className="mr-2 btnCreate">Login</Button>
-                <Button onClick={createNewId} variant="secondary" >Create a new ID</Button>
+                <Button type="submit" className="mr-2 btnCreate">
+                    Login
+                </Button>
+                <Button onClick={createNewId} variant="secondary" >
+                    Create a new ID
+                </Button>
             </Form>
-            
         </Container>
     )
 }

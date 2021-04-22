@@ -14,7 +14,6 @@ export function ContactsProvider({ children }) {
         setContacts(prevContacts => {
             return[...prevContacts, {id, name}];
         });
-
     }
 
     return (

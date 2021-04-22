@@ -12,13 +12,10 @@ export default function Dashboard({ id }) {
         if(sideBarContainer.style.display==="none"){
             let sideBarContainer=document.getElementById("sideBarContainer");
             sideBarContainer.style.display = "flex";
-            
-          
         }else{
             let sideBarContainer=document.getElementById("sideBarContainer");
             sideBarContainer.style.display = "none";
         }
-       
     }
 
     function sidebarShowHide(){
@@ -32,7 +29,10 @@ export default function Dashboard({ id }) {
 
     return (
         <div className="d-flex" style={{ height: '100vh'}}>
-            <div id="hamburgerHide"><i className="fas fa-hamburger hamburgerHide" onClick={() =>openMenu()} style={{display:'none'}}></i></div>
+            <div id="hamburgerHide">
+                <i className="fas fa-hamburger hamburgerHide" onClick={() =>openMenu()} style={{display:'none'}}>
+                </i>
+            </div>
             <Sidebar id = { id } />
             { selectedConversation &&  <OpenConversation /> }
         </div>

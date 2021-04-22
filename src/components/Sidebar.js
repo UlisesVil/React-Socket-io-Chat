@@ -40,19 +40,20 @@ export default function Sidebar({id}) {
                     </Tab.Pane>
                 </Tab.Content>
                 <div className="p-2 small">
-                    Your Id: <span className="text-white"> {id}</span>
+                    Your Id: 
+                    <span className="text-white"> 
+                        {id}
+                    </span>
                 </div>
                 <Button onClick={() => setModalOpen(true)} className="rounded-1 modalButton">
                     New { conversationsOpen ? 'Conversation' : 'Contact'}
                 </Button>
             </Tab.Container>       
 
-
             <Modal show={ModalOpen} onHide={closeModal}>
                 {conversationsOpen ? 
                     <NewConversationModal closeModal={closeModal}/> :
                     <NewContactModal closeModal={closeModal} />
-                
                 }
             </Modal>       
         </div>

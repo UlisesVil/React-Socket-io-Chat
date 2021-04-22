@@ -4,6 +4,7 @@ import { useConversations } from '../contexts/ConversationsProvider';
 import '../assets/css/conversations.css';
 
 export default function Conversations() {
+    
     const { conversations, selectConversationIndex } = useConversations();
 
     return (

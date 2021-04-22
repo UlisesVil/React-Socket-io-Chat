@@ -7,7 +7,6 @@
     background: rgba(2, 2, 2, 0.274);
     border: 1px solid rgb(0, 247, 255);
     color: rgb(0, 247, 255);
-    
 }
 
 .modal-header{
@@ -19,6 +18,17 @@
 .modal-body{
     border-bottom-left-radius: 10px !important;
     border-bottom-right-radius: 10px !important;
+}
+
+.modalButton{
+    background: rgb(2, 2, 2) !important;
+    color: rgb(0, 247, 255) !important;
+    border-color: rgb(0, 247, 255) !important;
+    margin-bottom: 9px;
+}
+
+.modalButton:hover{
+    text-shadow: 5px 5px 3px rgb(0, 247, 255) ;
 }
 
 .form-control{
@@ -38,6 +48,7 @@
     background: rgb(0, 247, 255) !important;
     color: rgb(0, 0, 0) !important;
 }
+
 .close{
     color: rgb(0, 247, 255) !important;
 }

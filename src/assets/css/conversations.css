@@ -4,9 +4,9 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    /*border: 1px solid red;*/
     padding: 0 10px;
 }
+
 .subconversation{
     width: 100% !important;
     max-width: 700px !important;
@@ -15,39 +15,21 @@
     background: rgba(0, 0, 0, 0.418);
     border: 1px solid rgb(0, 247, 255);
     border-radius: 10px;
-
 }
 
-.list-group .list-group-item{
-    background-color: #343a4000 !important;
-    color: gray !important;
-    border: rgb(231, 26, 26) !important;
-}
-.list-group .active{
-    background-color: rgba(0, 0, 0, 0.548) !important;
-    color: rgb(0, 247, 255) !important;
-    text-shadow: 5px 5px 3px rgb(0, 247, 255) ;
+.forMe{
+    background: black !important;
+    color: rgb(0, 247, 255);
+    border: 1px solid rgb(0, 247, 255);
 }
 
-/*TAB PANE*/
-.tab-content .tab-pane{
-    border: 1px solid rgb(0, 247, 255) !important;
-    border-radius: 10px;
-    overflow: hidden;
-    margin-top: 20px;
+.notForMe{
+    background:  rgb(0, 247, 255) !important;
+    color: black;
 }
 
-.tab-content{
-    border: 2px solid rgb(0, 247, 255) !important;
-    border-radius: 10px;
-    border-top-left-radius: 0px;
-    
-    overflow: hidden;
-}
-
-/*todos los items*/
-.tab-content .tab-pane .list-group .list-group-item{
-    border-top: 1px solid rgb(99, 99, 99) !important;
+.userReference{
+    color:white;
 }
 
 .sendMessage{
@@ -60,13 +42,16 @@
     text-shadow: 3px 3px 3px rgb(0, 247, 255);
 }
 
-
 .form-group{
     max-width: 800px !important;
     margin: 0 auto 9px!important;
 }
 
-
+.textArea{
+    background: rgba(0, 0, 0, 0.7) !important;
+    color: white !important;
+    border-color: rgb(0, 247, 255) !important;
+}
 
 @media screen and (max-width: 770px) {
 
@@ -83,14 +68,4 @@
         color: rgb(0, 247, 255);
         font-size: larger;
     }
-}
-@media screen and (max-width: 770px) {
-    .tab-content{
-        border-top-right-radius: 0px !important;
-    }
-    .tab-pane{
-        border-radius: 10px !important;
-       
-    }
-
 }

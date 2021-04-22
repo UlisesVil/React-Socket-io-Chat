@@ -8,11 +8,21 @@ export function useSocket(){
 }
 
 export function SocketProvider({ id, children }) {
-    const [socket, setSocket] = useState();
     
+    const [socket, setSocket] = useState();
+
+    function connectTo(){
+        var origin= window.location.hostname;
+        if(origin==='localhost'){
+            return 'http://localhost:5000';
+        }else{
+            return 'https://ulisesv-react-chat-webapp.herokuapp.com';
+        }
+    }
+
     useEffect(()=>{
         const newSocket = io(
-            'https://ulisesv-react-chat-webapp.herokuapp.com',
+            connectTo(),
             {
                 withCredentials: false,
                 query: { id }
@@ -31,5 +41,3 @@ export function SocketProvider({ id, children }) {
         </SocketContext.Provider>
     )
 }
-//'http://localhost:5000',
-//'https://ulisesv-react-chat-webapp.herokuapp.com',

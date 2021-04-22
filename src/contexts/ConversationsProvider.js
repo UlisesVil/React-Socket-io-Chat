@@ -19,7 +19,6 @@ export function ConversationsProvider({ id, children }) {
         setConversations(prevConversations => {
             return[...prevConversations, { recipients, messages:[] }];
         });
-
     }
 
     const addMessageToConversation= useCallback(({ recipients, text, sender })=>{
@@ -34,7 +33,6 @@ export function ConversationsProvider({ id, children }) {
                         messages: [...conversation.messages, newMessage]
                     }
                 }
-
                 return conversation;
             });
 
@@ -51,15 +49,12 @@ export function ConversationsProvider({ id, children }) {
 
     useEffect(()=>{
         if(socket == null) return
-
         socket.on('receive-message', addMessageToConversation);
-
         return () => socket.off('receive-message');
     },[socket, addMessageToConversation]);
 
     function sendMessage(recipients, text){
         socket.emit('send-message', {recipients, text});
-
         addMessageToConversation({ recipients, text, sender: id });
     }
 
@@ -97,10 +92,7 @@ export function ConversationsProvider({ id, children }) {
             {children}
         </ConversationsContext.Provider>   
     );
-
-   
 }
-
 
 function arrayEquality(a, b){
     if(a.length !== b.length) return false;

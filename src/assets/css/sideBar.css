@@ -1,25 +1,27 @@
-.forMe{
-    background: black !important;
-    color: rgb(0, 247, 255);
-    border: 1px solid rgb(0, 247, 255);
-    /*text-shadow: 3px 3px 3px rgb(0, 247, 255);*/
-}
-.notForMe{
-    background:  rgb(0, 247, 255) !important;
-    color: black;
-    /*text-shadow: 2px 2px 3px black;*/
-}
-
-.userReference{
-    color:white;
-}
-
 .sideBarContainer{
     display: flex;
     min-width: 150px;
     width: 30%;
     max-width: 300px;
     background: rgba(0, 0, 0, 0.548) !important;
+}
+
+.tab-content .tab-pane{
+    border: 1px solid rgb(0, 247, 255) !important;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.tab-content{
+    border: 2px solid rgb(0, 247, 255) !important;
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    overflow: hidden;
+}
+
+.tab-content .tab-pane .list-group .list-group-item{
+    border-top: 1px solid rgb(99, 99, 99) !important;
 }
 
 .nav-item{
@@ -37,13 +39,27 @@
 .nav-link:hover{
     color: rgb(80, 11, 240);
 }
+
 .active{
     color: rgb(0, 247, 255) !important;
     border: 1px solid rgb(0, 247, 255) !important;
 }
+
 .nav-tabs{
     border-bottom: none !important;
     background: none;
+}
+
+.list-group .list-group-item{
+    background-color: #343a4000 !important;
+    color: gray !important;
+    border: rgb(231, 26, 26) !important;
+}
+
+.list-group .active{
+    background-color: rgba(0, 0, 0, 0.548) !important;
+    color: rgb(0, 247, 255) !important;
+    text-shadow: 5px 5px 3px rgb(0, 247, 255) ;
 }
 
 .contact .contact{
@@ -56,36 +72,25 @@
     font-size: 12px;
     
 }
+
 .contactLine{
     line-height: 15px;
     margin-bottom: 5px;
 }
 
-.modalButton{
-    background: rgb(2, 2, 2) !important;
-    color: rgb(0, 247, 255) !important;
-    border-color: rgb(0, 247, 255) !important;
-    margin-bottom: 9px;
-}
-
-.modalButton:hover{
-    text-shadow: 5px 5px 3px rgb(0, 247, 255) ;
-}
-
-.textArea{
-    background: rgba(0, 0, 0, 0.7) !important;
-    color: white !important;
-    border-color: rgb(0, 247, 255) !important;
-}
-
-/*
-@media screen and (min-width: 770px) {
-    .sideBarContainer{
-        display: flex !important;
-        
-    }
-}*/
 @media screen and (max-width: 770px) {
+    .tab-content{
+        border-top-right-radius: 0px !important;
+    }
+
+    .tab-pane{
+        border-radius: 10px !important;
+       
+    }
+}
+
+@media screen and (max-width: 770px) {
+    
     .sideBarContainer{
         margin-top: 60px !important;
     }
@@ -94,10 +99,7 @@
         width: 100% !important;
     }
 
-
-
     .nav-link{
-        /*border: 1px solid red !important;*/
         border-right: 1px solid rgb(0, 247, 255) !important;
         border-left: 1px solid rgb(0, 247, 255) !important;
         border-top: 1px solid rgb(0, 247, 255) !important;
@@ -108,6 +110,7 @@
     .nav-link:hover{
         color: rgb(80, 11, 240);
     }
+
     .active{
         color: rgb(0, 247, 255) !important;
         border: 1px solid rgb(0, 247, 255) !important;

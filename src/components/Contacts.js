@@ -9,7 +9,12 @@ export default function Contacts() {
         <ListGroup variant='flush' className="contact">
             {contacts.map(contact =>(
                 <ListGroup.Item key={contact.id} className="contact">
-                    <p className="contactLine">{contact.name}</p> <p className="contactLine id">{contact.id}</p>
+                    <p className="contactLine">
+                        {contact.name}
+                    </p> 
+                    <p className="contactLine id">
+                        {contact.id}
+                    </p>
                 </ListGroup.Item>
             ))}
         </ListGroup>
