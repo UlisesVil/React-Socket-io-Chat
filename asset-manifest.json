@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/React-Socket-io-Chat/static/css/main.3d8e332c.chunk.css",
-    "main.js": "/React-Socket-io-Chat/static/js/main.7f70f1c8.chunk.js",
-    "main.js.map": "/React-Socket-io-Chat/static/js/main.7f70f1c8.chunk.js.map",
+    "main.css": "/React-Socket-io-Chat/static/css/main.2fb59a6b.chunk.css",
+    "main.js": "/React-Socket-io-Chat/static/js/main.6450e569.chunk.js",
+    "main.js.map": "/React-Socket-io-Chat/static/js/main.6450e569.chunk.js.map",
     "runtime-main.js": "/React-Socket-io-Chat/static/js/runtime-main.a0f9363b.js",
     "runtime-main.js.map": "/React-Socket-io-Chat/static/js/runtime-main.a0f9363b.js.map",
     "static/css/2.4c97ca4f.chunk.css": "/React-Socket-io-Chat/static/css/2.4c97ca4f.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.f88950ad.chunk.js.map": "/React-Socket-io-Chat/static/js/2.f88950ad.chunk.js.map",
     "index.html": "/React-Socket-io-Chat/index.html",
     "static/css/2.4c97ca4f.chunk.css.map": "/React-Socket-io-Chat/static/css/2.4c97ca4f.chunk.css.map",
-    "static/css/main.3d8e332c.chunk.css.map": "/React-Socket-io-Chat/static/css/main.3d8e332c.chunk.css.map",
+    "static/css/main.2fb59a6b.chunk.css.map": "/React-Socket-io-Chat/static/css/main.2fb59a6b.chunk.css.map",
     "static/js/2.f88950ad.chunk.js.LICENSE.txt": "/React-Socket-io-Chat/static/js/2.f88950ad.chunk.js.LICENSE.txt",
     "static/media/styles.css": "/React-Socket-io-Chat/static/media/back1.dbb1caca.jpg"
   },
@@ -18,7 +18,7 @@
     "static/js/runtime-main.a0f9363b.js",
     "static/css/2.4c97ca4f.chunk.css",
     "static/js/2.f88950ad.chunk.js",
-    "static/css/main.3d8e332c.chunk.css",
-    "static/js/main.7f70f1c8.chunk.js"
+    "static/css/main.2fb59a6b.chunk.css",
+    "static/js/main.6450e569.chunk.js"
   ]
 }
